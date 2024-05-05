@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #34c94b !important;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Center vertically */
+  margin-right: 16px; /* Add space to the right (adjust as needed) */
+}
+
+.hero {
+  background-color: black;
+}
+
+.albums {
+  background-color: black;
+  color: white;
+}
+
+.cards {
+  border-radius: 20%;
+}
+
+.album-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2%;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.album-bar button {
+  color: #34c94b;
+  background-color: black;
+}
