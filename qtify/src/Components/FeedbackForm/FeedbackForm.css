@@ -1,4 +1,4 @@
-.feedbackname {
+/* .feedbackname {
     margin-top: 16px;
     background: none;
     color: var(--css-black);
@@ -11,7 +11,7 @@
     height: 450px;
     position: absolute;
     top: 99px;
-    /* border: solid yellow; */
+    border: solid yellow;
     margin: auto;
     left: 0;
     right: 0;
@@ -45,4 +45,4 @@
     cursor: pointer;
    
 }
-
+ */

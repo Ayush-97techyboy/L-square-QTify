@@ -1,12 +1,11 @@
-import React from 'react'
-import './Card.css'
-import Logo from "../../Images/Logo"
-import Tooltip from '@mui/material/Tooltip';
-import Box from '@mui/material/Box';
+import React from "react";
+import "./Card.css";
+import Logo from "../../UpperSecJSX/Logo";
+import Tooltip from "@mui/material/Tooltip";
+import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
 
 const Card = (props) => {
-
   const positionRef = React.useRef({
     x: 0,
     y: 0,
@@ -36,7 +35,7 @@ const Card = (props) => {
                 positionRef.current.x,
                 areaRef.current.getBoundingClientRect().y,
                 0,
-                0,
+                0
               );
             },
           },
@@ -44,13 +43,10 @@ const Card = (props) => {
       >
         {props.slug ? ( // Check if props.slug is defined
           <Link to={`/music/${props.slug}`}>
-            <Box
-              ref={areaRef}
-              onMouseMove={handleMouseMove}
-            >
-              <div className='card'>
+            <Box ref={areaRef} onMouseMove={handleMouseMove}>
+              <div className="card">
                 <img src={props.image} alt={<Logo />} />
-                <div className='followers'>
+                <div className="followers">
                   {props.follows ? (
                     <p>{props.follows} Follows</p>
                   ) : (
@@ -62,13 +58,10 @@ const Card = (props) => {
             </Box>
           </Link>
         ) : (
-          <Box
-            ref={areaRef}
-            onMouseMove={handleMouseMove}
-          >
-            <div className='card'>
+          <Box ref={areaRef} onMouseMove={handleMouseMove}>
+            <div className="card">
               <img src={props.image} alt={<Logo />} />
-              <div className='followers'>
+              <div className="followers">
                 {props.follows ? (
                   <p>{props.follows} Follows</p>
                 ) : (
@@ -81,7 +74,7 @@ const Card = (props) => {
         )}
       </Tooltip>
     </div>
-  )
-}
+  );
+};
 
 export default Card;

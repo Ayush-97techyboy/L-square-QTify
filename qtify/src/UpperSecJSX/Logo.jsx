@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function Logo() {
   const svgContent = `
@@ -14,7 +14,9 @@ function Logo() {
   return (
     <div>
       {/* Render the SVG using dangerouslySetInnerHTML */}
-      <div dangerouslySetInnerHTML={{ __html: svgContent }} />
+      <a href="/" aria-label="Home">
+        <div dangerouslySetInnerHTML={{ __html: svgContent }} />
+      </a>
     </div>
   );
 }
